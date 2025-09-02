@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
@@ -18,9 +17,10 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: maven
 
-    
-      - name: Build (skip tests on CI)
-        run: mvn -B clean verify -DskipTests
+      - name: Build with Gradle (skip tests)
+        uses: gradle/gradle-build-action@v3
+        with:
+          arguments: build -x test
+
 
