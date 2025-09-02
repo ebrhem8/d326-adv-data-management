@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -18,9 +19,43 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Build with Gradle (skip tests)
-        uses: gradle/gradle-build-action@v3
+      - name: Detect build tool
+        id: detect
+        shell: bash
+        run: |
+          if POM=$(find . -name "pom.xml" -type f | head -n 1); then
+            echo "tool=maven" >> "$GITHUB_OUTPUT"
+            echo "dir=$(dirname "$POM")" >> "$GITHUB_OUTPUT"
+            echo "pom=$POM" >> "$GITHUB_OUTPUT"
+          elif GRADLE=$(find . -name "gradlew" -type f | head -n 1); then
+            echo "tool=gradle" >> "$GITHUB_OUTPUT"
+            echo "dir=$(dirname "$GRADLE")" >> "$GITHUB_OUTPUT"
+          else
+            echo "tool=none" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Enable Maven cache
+        if: steps.detect.outputs.tool == 'maven'
+        uses: actions/setup-java@v4
         with:
-          arguments: build -x test
+          distribution: temurin
+          java-version: 17
+          cache: maven
+          cache-dependency-path: ${{ steps.detect.outputs.pom }}
+
+      - name: Build with Maven (skip tests)
+        if: steps.detect.outputs.tool == 'maven'
+        working-directory: ${{ steps.detect.outputs.dir }}
+        run: mvn -B -ntp clean verify -DskipTests
+
+      - name: Build with Gradle (skip tests)
+        if: steps.detect.outputs.tool == 'gradle'
+        working-directory: ${{ steps.detect.outputs.dir }}
+        run: ./gradlew build -x test
+
+      - name: No Java build found
+        if: steps.detect.outputs.tool == 'none'
+        run: echo "No pom.xml or gradlew found; skipping Java build."
+
 
 
