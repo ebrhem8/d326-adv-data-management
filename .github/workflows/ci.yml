@@ -1,0 +1,26 @@
+name: Repo checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  ok:
+    name: Smoke check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Repo summary
+        run: |
+          echo "Ref: $GITHUB_REF"
+          echo "SHA: $GITHUB_SHA"
+          echo "Top-level files:"
+          ls -la
+
+      - name: All good
+        run: echo "✅ No Java build for this repo; checks OK."
